@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/firebase@10.7.1/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/firebase@10.7.1/auth.js"></script>
+    <script src="app.js" type="module"></script>
+</head>
+<body>
+    <div class="backgroundimg">
+        <img src="image5.jpg" alt="background">
+        <fieldset>
+            <legend>Sign Up</legend>
+            <div class="row g-3">
+                <div class="col">
+                    <input type="text" class="form-control" id="fname" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" id="lname" placeholder="Last name" aria-label="Last name">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" id="email" class="form-control" placeholder="example123@gmail.com" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter Password">
+                </div>
+                <div class="radiobtn">
+                    <p>Gender</p>
+                </div>
+                <div class="gen">
+                    <div class="form-check"> 
+                        <label class="form-check-label" for="flexRadioDefault1"> Male </label>
+                        <input class="form-check-input" id="gend" type="radio" name="flexRadioDefault">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="gend" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1"> Female </label>
+                    </div>
+                </div> 
+                <hr size="30"/>
+                <div class="container">
+                    <button onclick="register()" type="button" class="btn btn-secondary">Sign Up</button>
+                </div>
+                <br/>
+                <p class="para">Already have an account? <a href="login.html">Login now</a></p>
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>
